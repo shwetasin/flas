@@ -1,0 +1,26 @@
+{!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>{% block title %}{% endblock %}</title>
+    </head>
+    <body>
+        <ul>
+        {% for item in templateobj['countries']%}
+        {{item['country']}}=country_name
+        {{item['capital']}}=capital_name
+        {{item['flag']}}=flag
+        {{item['currency']}}=currency
+        {{item['region']}}=region
+        {{item['language']}}=language
+        {{item['area']}}=area
+        {{item['population']}}=population
+        {{item['timezone']}}=timezone
+        {%endfor%}
+        </ul>
+    </body>
+    </html>
+
+ 
